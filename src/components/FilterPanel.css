@@ -1,0 +1,188 @@
+.filter-panel {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    height: fit-content;
+    position: sticky;
+    top: var(--spacing-lg);
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.filter-header-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.filter-header-title svg {
+    color: var(--color-accent);
+    font-size: var(--font-size-base);
+}
+
+.filter-header-title h2 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.filter-reset-btn {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.filter-reset-btn:hover {
+    border-color: var(--color-accent);
+}
+
+.filter-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.filter-section:last-child {
+    margin-bottom: 0;
+}
+
+.filter-label {
+    display: block;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.filter-search {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition);
+}
+
+.filter-search:focus-within {
+    border-color: var(--color-accent);
+}
+
+.filter-search svg:first-child {
+    color: var(--color-text-tertiary);
+    flex-shrink: 0;
+    font-size: var(--font-size-sm);
+}
+
+.filter-search input {
+    flex: 1;
+    background: transparent;
+    color: var(--color-text-primary);
+    width: 100%;
+}
+
+.filter-search-clear {
+    padding: 4px;
+    color: var(--color-text-tertiary);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+    flex-shrink: 0;
+}
+
+.filter-search-clear:hover {
+    color: var(--color-text-primary);
+}
+
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.filter-chip {
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-secondary);
+    transition: all var(--transition);
+    cursor: pointer;
+}
+
+.filter-chip:hover {
+    border-color: var(--color-border-hover);
+}
+
+.filter-chip.active {
+    color: white;
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.filter-checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    user-select: none;
+    padding: var(--spacing-sm);
+}
+
+.filter-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--color-accent);
+}
+
+.filter-checkbox span {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+}
+
+.filter-select {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: all var(--transition);
+    font-size: var(--font-size-sm);
+}
+
+.filter-select:focus {
+    border-color: var(--color-accent);
+}
+
+.filter-select option {
+    background: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 1024px) {
+    .filter-panel {
+        position: static;
+        margin-bottom: var(--spacing-xl);
+    }
+}
