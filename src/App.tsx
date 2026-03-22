@@ -9,8 +9,6 @@ import {
     useSensors,
 } from '@dnd-kit/core';
 import { motion } from 'framer-motion';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons';
 import { useTasks } from './hooks/useTasks';
 import { TaskInput } from './components/TaskInput';
 import { FilterPanel } from './components/FilterPanel';
@@ -93,7 +91,7 @@ function App() {
                 >
                     <h1 className="app-title gradient-text">Gestor de Tareas</h1>
                     <p className="app-subtitle">
-                        Organiza tu día con estilo <FontAwesomeIcon icon={faWandMagicSparkles} />
+                        Organiza tu día con estilo
                     </p>
                 </motion.header>
 
